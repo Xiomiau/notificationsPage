@@ -1,0 +1,82 @@
+:root {
+--White: hsl(0, 0%, 100%);
+--Very-light-grayish-blue: hsl(210, 60%, 98%);
+--Light-grayish-blue-1: hsl(211, 68%, 94%);
+--Light-grayish-blue-2: hsl(205, 33%, 90%);
+--Grayish-blue: hsl(219, 14%, 63%);
+--Dark-grayish-blue: hsl(219, 12%, 42%);
+--Very-dark-blue: hsl(224, 88%, 25%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container {
+    margin: 10px;
+}
+
+.notTitle {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+}
+
+.notTitle p:nth-child(1) {
+    /* width: ; */
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: auto;
+}
+
+.notTitle p:nth-child(2) {
+    color: var(--Dark-grayish-blue);
+}
+
+#number {
+    background-color: var(--Very-dark-blue);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.notificaction {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: var(--Very-light-grayish-blue);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.photo {
+    grid-column: 1;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.noti-name, .time {
+    grid-column: 2/6;
+}
+
+.noti-name {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.noti-name span {
+    font-weight: bold;
+}
+
+
+.ph-mark {
+    background-image: url(/assets/images/avatar-mark-webber.webp);
+    background-color:aqua ;
+}
