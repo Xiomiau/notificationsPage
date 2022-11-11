@@ -40,15 +40,22 @@
     cursor: pointer;
 }
 
+
+.paraf2 {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+}
 .redDot {
     width: 7px;
     height: 7px;
     background-color: rgb(248, 74, 74);
     border-radius: 50%;
     position: absolute;
-    right: 13% ;
-    top: 12.7%;
+    top: 7px;
+    right: -11px;
 }
+
 
 #number {
     background-color: var(--Very-dark-blue);
@@ -66,6 +73,7 @@
     border-radius: 10px;
     padding: 15px;
     color: var(--Dark-grayish-blue);
+    box-shadow: 2px 2px 5px 1px rgb(182, 182, 182)
 }
 
 .notificactionUnread {
@@ -82,7 +90,8 @@
     background-repeat: no-repeat;
 }
 
-.noti-name, .time {
+
+.noti-name, .time, .paraf2 {
     grid-column: 2/6;
 }
 
@@ -100,6 +109,8 @@
     color: black;
     cursor: pointer;
 }
+
+
 
 .noti-name span:hover{
     color: var(--Very-dark-blue);
@@ -152,6 +163,22 @@
 
 .not-kim .noti-name {
     grid-column: 2/5;
+}
+
+
+@media (min-width:1281px) {
+    
+    body {
+        background-color: var(--Light-grayish-blue-2);
+    }
+    .container{
+            width: 40%;
+            padding: 20px;
+            margin: 80px auto;
+            background-color: white;
+            border-radius: 10px;
+        }
+        
 }
 
 
