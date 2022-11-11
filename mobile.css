@@ -26,7 +26,6 @@
 }
 
 .notTitle p:nth-child(1) {
-    /* width: ; */
     font-weight: bold;
     font-size: 20px;
     margin-right: auto;
@@ -34,6 +33,21 @@
 
 .notTitle p:nth-child(2) {
     color: var(--Dark-grayish-blue);
+}
+
+.notTitle p:nth-child(2):hover {
+    color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+
+.redDot {
+    width: 7px;
+    height: 7px;
+    background-color: rgb(248, 74, 74);
+    border-radius: 50%;
+    position: absolute;
+    right: 13% ;
+    top: 12.7%;
 }
 
 #number {
@@ -51,6 +65,7 @@
     margin-bottom: 10px;
     border-radius: 10px;
     padding: 15px;
+    color: var(--Dark-grayish-blue);
 }
 
 .notificactionUnread {
@@ -74,10 +89,20 @@
 .noti-name {
     font-size: 15px;
     font-weight: 500;
+    height: fit-content;
+    grid-row: 1;
+    position: relative;
+
 }
 
 .noti-name span {
     font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.noti-name span:hover{
+    color: var(--Very-dark-blue);
 }
 
 
@@ -115,3 +140,18 @@
 .ph-anna {
     background-image: url(/assets/images/avatar-anna-kim.webp);
 }
+
+.pic {
+    background-image: url(/assets/images/image-chess.webp);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-size: contain;
+    justify-self: end;
+}
+
+.not-kim .noti-name {
+    grid-column: 2/5;
+}
+
+
