@@ -162,6 +162,12 @@
     grid-column: 2/5;
 }
 
+.message:hover {
+    cursor: pointer;
+    background-color: var(--Light-grayish-blue-1);
+
+}
+
 
 @media (min-width:1281px) {
     
