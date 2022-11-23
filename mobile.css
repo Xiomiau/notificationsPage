@@ -1,6 +1,6 @@
 :root {
 --White: hsl(0, 0%, 100%);
---Very-light-grayish-blue: hsl(210, 60%, 98%);
+--Very-light-grayish-blue: hsla(213, 36%, 95%, 0.836);
 --Light-grayish-blue-1: hsl(211, 68%, 94%);
 --Light-grayish-blue-2: hsl(205, 33%, 90%);
 --Grayish-blue: hsl(219, 14%, 63%);
@@ -73,7 +73,7 @@
     border-radius: 10px;
     padding: 15px;
     color: var(--Dark-grayish-blue);
-    box-shadow: 2px 2px 5px 1px rgb(182, 182, 182)
+    box-shadow: 2px 2px 3px 1px rgb(236, 231, 231)
 }
 
 .notificactionUnread {
@@ -110,12 +110,9 @@
     cursor: pointer;
 }
 
-
-
 .noti-name span:hover{
     color: var(--Very-dark-blue);
 }
-
 
 .ph-mark {
     background-image: url(/assets/images/avatar-mark-webber.webp);
@@ -174,7 +171,7 @@
     .container{
             width: 40%;
             padding: 20px;
-            margin: 80px auto;
+            margin: 50px auto;
             background-color: white;
             border-radius: 10px;
         }
